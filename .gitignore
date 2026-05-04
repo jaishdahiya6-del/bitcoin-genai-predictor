@@ -1,0 +1,27 @@
+# Secrets — never commit API keys
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Raw data
+data/raw/
+*.csv
+
+# Saved models
+models/*.pkl
+models/*.joblib
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.DS_Store
