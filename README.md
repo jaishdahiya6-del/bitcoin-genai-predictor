@@ -1,30 +1,37 @@
-# 🪙 Bitcoin GenAI Predictor
-[![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Framework](https://img.shields.io/badge/Framework-TensorFlow%20/%20PyTorch-orange)](https://tensorflow.org)
+# 🪙 Bitcoin GenAI Predictor: Hybrid Forecasting System
+![Banner](https://img.shields.io/badge/Status-In--Development-green?style=for-the-badge)
+![Tech](https://img.shields.io/badge/AI-Generative--Deep--Learning-A97CF8?style=for-the-badge)
 
-An advanced predictive modeling system that leverages **Generative AI** and **Deep Learning** to forecast Bitcoin price volatility and market trends. This project moves beyond standard regression by incorporating sentiment-driven generative insights.
+An advanced predictive modeling system that leverages **Generative AI** and **Deep Learning** to forecast Bitcoin price volatility. This project moves beyond standard regression by incorporating sentiment-driven generative insights from real-time news.
 
 ---
 
-## 📊 Project Overview
-Predicting cryptocurrency is notoriously difficult due to high volatility. This project solves that by:
-*   **Time-Series Analysis:** Utilizing LSTM/GRUs for historical price patterns.
-*   **GenAI Integration:** Using LLMs to analyze real-time news sentiment and social media "hype".
-*   **End-to-End Pipeline:** Automated data collection, cleaning, modeling, and visualization.
-
 ## 🏗️ Technical Architecture
-We follow the **CRISP-DM** framework for a structured data science workflow:
-1. **Data Acquisition:** Scrapping market data via Yahoo Finance or Binance API.
-2. **Feature Engineering:** Technical indicators (RSI, Moving Averages) combined with GenAI sentiment scores.
-3. **Modeling:** A hybrid architecture combining recurrent neural networks (RNNs) with attention mechanisms.
-4. **Evaluation:** Testing against RMSE, MAE, and R² metrics.
+We utilize a hybrid approach combining quantitative data with qualitative sentiment analysis.
+
+
+
+| Layer | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Data Engine** | `yfinance` & `NewsAPI` | Multi-source data ingestion |
+| **Sentiment Layer** | `Generative AI (LLMs)` | Real-time "fear & greed" index analysis |
+| **Model Core** | `LSTM / GRU` | Capturing long-term temporal dependencies |
+| **UI / Dashboard** | `Streamlit` | Interactive price forecasting visualizations |
+
+---
+
+## 🚀 Key Features
+- **GenAI Sentiment Analysis:** Uses LLMs to process tech news and social media trends into numerical "Sentiment Scores."
+- **Time-Series Forecasting:** Implements Recurrent Neural Networks (RNNs) for high-accuracy price trend prediction.
+- **Automated Pipeline:** Full end-to-end workflow from data scraping to model evaluation.
+- **Risk Metrics:** Calculates RSI, Bollinger Bands, and Moving Averages automatically.
+
+---
 
 ## 📂 Repository Structure
 ```text
-├── app/                # Streamlit/Dash web dashboard
-├── models/             # Trained .h5 or .pkl model files
-│   └── evaluation.png  # Performance charts
-├── notebooks/          # Exploratory Data Analysis (EDA)
-├── src/                # Production-grade Python scripts
-└── requirements.txt    # Project dependencies
+├── 📊 app/             # Interactive Streamlit dashboard
+├── 🧠 models/          # Trained weights (.h5 / .pt files)
+├── 📓 notebooks/       # EDA & Feature Engineering logic
+├── ⚙️ src/             # Production scripts (Scraping, Training)
+└── 📄 requirements.txt # Project dependencies
