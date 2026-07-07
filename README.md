@@ -11,7 +11,7 @@ We utilize a hybrid approach combining quantitative data with qualitative sentim
 
 
 
-| Layer | Technology | Purpose |
+| Layer | Technoly | Purpose |
 | :--- | :--- | :--- |
 | **Data Engine** | `yfinance` & `NewsAPI` | Multi-source data ingestion |
 | **Sentiment Layer** | `Generative AI (LLMs)` | Real-time "fear & greed" index analysis |
