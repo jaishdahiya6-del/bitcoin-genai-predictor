@@ -30,8 +30,29 @@ We utilize a hybrid approach combining quantitative data with qualitative sentim
 
 ## 📂 Repository Structure
 ```text
-├── 📊 app/             # Interactive Streamlit dashboard
-├── 🧠 models/          # Trained weights (.h5 / .pt files)
-├── 📓 notebooks/       # EDA & Feature Engineering logic
-├── ⚙️ src/             # Production scripts (Scraping, Training)
-└── 📄 requirements.txt # Project dependencies
+Bitcoin-GenAI-Predictor/
+│
+├── app/
+│   ├── app.py
+│   ├── dashboard.py
+│   └── pages/
+│
+├── src/
+│   ├── data_loader.py
+│   ├── news_scraper.py
+│   ├── sentiment.py
+│   ├── indicators.py
+│   ├── preprocessing.py
+│   ├── train.py
+│   ├── predict.py
+│   ├── evaluation.py
+│   └── utils.py
+│
+├── models/
+│
+├── notebooks/
+│
+├── data/
+│
+├── requirements.txt
+└── README.md
