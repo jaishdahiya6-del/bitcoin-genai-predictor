@@ -50,6 +50,7 @@ pandas==3.0.2
 peewee==4.0.5
 pillow==12.2.0
 platformdirs==4.9.6
+plotly==7.0.0
 protobuf==7.34.1
 pyarrow==24.0.0
 pycparser==3.0
